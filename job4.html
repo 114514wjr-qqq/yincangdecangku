@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>城市旅行写生本交流夜 · City Sketchbook Night</title>
+    <style>
+        /* 必须声明的.page样式（仅修改背景色） */
+        .page {
+            display: inline-block;
+            background-color: #E3F7F7; /* 海盐青 */
+            box-shadow: 0 0 30px rgba(80, 58, 35, 0.25);
+            text-align: left;
+            max-width: 720px;
+        }
+
+        /* 并集选择器：所有标题统一样式 */
+        h1, h2, h3, h4, h5, h6 {
+            color: #2D5B5B;
+            font-family: "Microsoft YaHei", sans-serif;
+            margin: 16px 20px;
+            border-bottom: 2px solid #B8E4E4;
+            padding-bottom: 8px;
+        }
+
+        /* ID选择器：重要提示强调样式 */
+        p#intro {
+            font-size: 18px;
+            font-weight: bold;
+            color: #D64933;
+            margin: 12px 20px;
+            padding: 8px;
+            background-color: #F0F8F8;
+            border-left: 4px solid #D64933;
+        }
+
+        /* 后代选择器：div表格中的链接样式 */
+        div table a {
+            color: #1A7373;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        /* 链接伪类：四种状态 */
+        a:link {
+            color: #1A7373;
+        }
+        a:visited {
+            color: #6A994E;
+        }
+        a:hover {
+            color: #D64933;
+            text-decoration: underline;
+        }
+        a:active {
+            color: #FF6B35;
+        }
+
+        /* 带类名的链接：red和blue */
+        a.red {
+            color: #D64933;
+            background-color: #FFF5F5;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+        a.blue {
+            color: #1A7373;
+            background-color: #F0F8F8;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+        /* 伪元素：首字母和首行 */
+        p::first-letter {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2D5B5B;
+            float: left;
+            margin-right: 4px;
+        }
+        div::first-line {
+            line-height: 1.8;
+            font-weight: 500;
+        }
+
+        /* 表格样式优化 */
+        table {
+            width: 95%;
+            margin: 16px 20px;
+            border-collapse: collapse;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        th, td {
+            border: 1px solid #B8E4E4;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #D4ECEC;
+            color: #2D5B5B;
+            font-weight: bold;
+        }
+
+        /* 底部公告区样式 */
+        .notice {
+            margin: 20px;
+            padding: 12px;
+            background-color: #F0F8F8;
+            border: 1px solid #B8E4E4;
+            border-radius: 4px;
+            color: #2D5B5B;
+            line-height: 1.6;
+        }
+
+        /* 通用文本样式 */
+        p {
+            margin: 10px 20px;
+            line-height: 1.6;
+            color: #333;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <!-- ①顶部标题区 -->
+        <div>
+            <h1>趵突泉街 · 城市旅行写生本交流夜 · City Sketchbook Night</h1>
+        </div>
+
+        <!-- ②活动介绍区 -->
+        <div>
+            <h2>活动介绍</h2>
+            <p>每个城市都有藏在街头巷尾的故事，而写生本是旅行中最忠实的记录者。本次交流夜邀请所有热爱旅行（travel）与速写的朋友，带着你的写生本聚集一堂，分享旅途中的灵感瞬间——可能是趵突泉畔的晨光，也可能是老巷里的烟火气。</p>
+            <p>无论你是专业画手还是入门新手，无论是用铅笔勾勒轮廓，还是用彩笔渲染氛围，都能在这里找到共鸣。我们会一起交流写生技巧、旅行路线规划，更能交换彼此笔下的城市记忆，让每一页写生都成为跨越空间的对话。</p>
+            <p>旅行（journey）的意义不仅在于抵达，更在于记录与分享。拿起你的画笔，让我们用线条和色彩，为济南这座城市留下独特的注脚，也为自己的旅行故事增添温暖的一笔。</p>
+            <p id="intro">重要提示：请参与者务必携带个人写生本及相关绘画工具，活动现场将设置作品展示区，欢迎提前准备3-5幅得意作品进行分享！</p>
+        </div>
+
+        <!-- ③活动报名信息表格区 -->
+        <div>
+            <h3>报名参与者信息</h3>
+            <table>
+                <tr>
+                    <th>姓名</th>
+                    <th>旅行写生经历</th>
+                    <th>擅长绘画工具</th>
+                    <th>分享作品主题</th>
+                    <th>联系方式</th>
+                </tr>
+                <tr>
+                    <td>李明</td>
+                    <td>济南老城深度写生3年</td>
+                    <td>钢笔、马克笔</td>
+                    <td>《趵突泉四季光影》</td>
+                    <td><a href="mailto:liming@example.com">邮件联系</a></td>
+                </tr>
+                <tr>
+                    <td>陈晓雨</td>
+                    <td>国内12座城市旅行写生</td>
+                    <td>水彩、彩铅</td>
+                    <td>《老济南巷弄烟火》</td>
+                    <td><a href="mailto:chenxy@example.com">邮件联系</a></td>
+                </tr>
+                <tr>
+                    <td>张伟</td>
+                    <td>川藏线旅行写生</td>
+                    <td>炭笔、速写本</td>
+                    <td>《高原与古城的线条对话》</td>
+                    <td><a href="mailto:zhangwei@example.com">邮件联系</a></td>
+                </tr>
+                <tr>
+                    <td>林溪</td>
+                    <td>江南水乡写生之旅</td>
+                    <td>毛笔、水墨</td>
+                    <td>《小桥流水与济南泉韵》</td>
+                    <td><a href="mailto:linxi@example.com">邮件联系</a></td>
+                </tr>
+                <tr>
+                    <td>赵宇</td>
+                    <td>欧洲5国旅行写生</td>
+                    <td>色粉、油画棒</td>
+                    <td>《中外古城建筑速写对比》</td>
+                    <td><a href="mailto:zhaoyu@example.com">邮件联系</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- ④页面链接区 -->
+        <div>
+            <h3>相关链接</h3>
+            <div>
+                <a href="https://hongchenwusdnu.github.io/bookstore/job4.html" class="red" target="_blank">查看往期写生活动照片</a>
+                <br><br>
+                <a href="job3.html" class="blue" target="_blank">在线咨询写生活动详情</a>
+            </div>
+        </div>
+
+        <!-- ⑤底部公告区 -->
+        <div class="notice">
+            公告一：活动时间为2024年10月26日19:00-21:30，地点位于济南市历下区文化中心三楼多功能厅<br>
+            公告二：本次活动免费参与，报名截止日期为2024年10月20日，名额有限，先到先得<br>
+            公告三：活动现场提供简易绘画工具补给（铅笔、橡皮、画纸），如需特殊工具请自行携带；<br>
+            活动结束后将评选"最佳写生作品"3名，获奖作品将在文化中心展厅展出1个月，欢迎积极参与！
+        </div>
+    </div>
+</body>
+</html>
